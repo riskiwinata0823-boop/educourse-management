@@ -2,125 +2,108 @@
 
 @section('content')
 
-<div class="p-5 mb-4 bg-light rounded-3">
+<div class="p-5 mb-4 bg-light rounded-3 shadow">
+
     <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">EduCourse Management</h1>
+
+        <h1 class="display-5 fw-bold">
+            EduCourse Management
+        </h1>
+
         <p class="col-md-8 fs-4">
-            Sistem manajemen edukasi menggunakan Laravel 10 dan Bootstrap 5.
+
+            Educational management system using Laravel 10 and Bootstrap 5.
+
         </p>
-    </div>
-</div>
-
-<div class="row">
-
-    <div class="col-md-4">
-        <div class="card text-center shadow">
-            <div class="card-body">
-                <h2>150</h2>
-                <p>Students</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card text-center shadow">
-            <div class="card-body">
-                <h2>20</h2>
-                <p>Lecturers</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card text-center shadow">
-            <div class="card-body">
-                <h2>35</h2>
-                <p>Courses</p>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<div class="accordion mt-5" id="accordionExample">
-
-    <div class="accordion-item">
-
-        <h2 class="accordion-header">
-
-            <button class="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne">
-
-                About EduCourse
-
-            </button>
-
-        </h2>
-
-        <div id="collapseOne"
-             class="accordion-collapse collapse show">
-
-            <div class="accordion-body">
-
-                EduCourse is a Laravel 10 educational management system project.
-
-            </div>
-
-        </div>
 
     </div>
 
 </div>
-<div class="mt-4">
 
-    <button class="btn btn-primary"
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
+<div id="carouselExample"
+     class="carousel slide mb-5">
 
-        Open Modal
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+
+            <img src="https://via.placeholder.com/1200x400"
+                 class="d-block w-100">
+
+        </div>
+
+        <div class="carousel-item">
+
+            <img src="https://via.placeholder.com/1200x400"
+                 class="d-block w-100">
+
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
 
     </button>
 
 </div>
 
-<div class="modal fade"
-     id="exampleModal"
-     tabindex="-1">
+<div class="row">
 
-    <div class="modal-dialog">
+    <div class="col-md-4 mb-3">
 
-        <div class="modal-content">
+        <div class="card shadow text-center">
 
-            <div class="modal-header">
+            <div class="card-body">
 
-                <h5 class="modal-title">
-                    EduCourse Information
-                </h5>
+                <h3>15</h3>
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
+                <p>Students</p>
 
             </div>
 
-            <div class="modal-body">
+        </div>
 
-                Welcome to EduCourse Management System.
+    </div>
+
+    <div class="col-md-4 mb-3">
+
+        <div class="card shadow text-center">
+
+            <div class="card-body">
+
+                <h3>6</h3>
+
+                <p>Lecturers</p>
 
             </div>
 
-            <div class="modal-footer">
+        </div>
 
-                <button type="button"
-                        class="btn btn-secondary"
-                        data-bs-dismiss="modal">
+    </div>
 
-                    Close
+    <div class="col-md-4 mb-3">
 
-                </button>
+        <div class="card shadow text-center">
+
+            <div class="card-body">
+
+                <h3>4</h3>
+
+                <p>Courses</p>
 
             </div>
 
@@ -129,16 +112,9 @@
     </div>
 
 </div>
+
 <x-alert>
     Welcome to EduCourse Laravel 10 Project
 </x-alert>
-
-<x-card title="Laravel Framework">
-    Laravel is a modern PHP framework for web development.
-</x-card>
-
-<x-card title="Bootstrap 5">
-    Bootstrap helps create responsive and modern interfaces.
-</x-card>
 
 @endsection
