@@ -1,0 +1,19 @@
+@extends('layouts.app')
+
+@section('content')
+
+<div class="text-center mt-5">
+
+    <h1 class="display-1 text-danger">
+        404
+    </h1>
+
+    <h3>Page Not Found</h3>
+
+    <a href="/" class="btn btn-primary mt-3">
+        Back to Home
+    </a>
+
+</div>
+
+@endsection
